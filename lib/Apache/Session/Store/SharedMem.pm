@@ -1,15 +1,14 @@
 # Apache::Session::Store::SharedMem
 
-# Copyright 2001, 2001 Simon Wistow <simon@twoshortplanks.com>
+# Copyright 2004, Simon Wistow <simon@thegestalt.org>
 # This module is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 
 package Apache::Session::Store::SharedMem;
 
 use strict;
-use vars qw($VERSION);
+use IPC::Cache;
 
-$VERSION = '0.3';
 
 
 

@@ -3,8 +3,7 @@
 use strict;
 use diagnostics;
 
-
-print "1..8\n";
+print "1..10\n";
 
 
 eval 'require IPC::ShareLite';
@@ -96,5 +95,31 @@ else{
 }
 	
 
+use Apache::Session::Flex;
 
+my $hash;
 
+tie %$hash, 'Apache::Session::Flex', undef, { 
+	Store	  => 'SharedMem',
+	Lock      => 'Null',
+    Generate  => 'MD5',
+    Serialize => 'Base64'
+};
+
+if (tied %$hash) {
+    print "ok 9\n";
+}
+else {
+    print "not ok 9 : couldn't tie Apache::Session::Flex to hash\n";
+}
+
+if (exists $hash->{_session_id}) {
+    print "ok 10\n";
+}
+else {
+    print "not ok 10 : sessionid not set;  session has not initialised properly\n";
+}
+
+tied(%$hash)->delete;
+untie %$hash;
+undef $hash;

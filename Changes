@@ -1,5 +1,8 @@
 Revision history for Perl extension Apache::Session::SharedMem.
 
+0.6 Wed Sep 22 11:38:32 2004
+	- make it work under Apache::Session::Flex
+
 0.5   Fri Sep  5 11:32:58 2003
     - stopped it dieing if the session could not be found
 
