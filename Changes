@@ -1,10 +1,13 @@
 Revision history for Perl extension Apache::Session::SharedMem.
 
+0.41  Thu Sep 26 09:27:50 2002
+    - changed the layout of the modules to make stuff install properly on some systems.
+
 0.4   Mon Aug 26 10:37:18 2002
     - put some prerequisites in the Makefile.PL
 
 0.31  Tue Mar 20 16:32:45 2001
-    - Finally get roudn to uploading to CPAN. Forgot to put README in MANIFEST so try and delete and upload again. Which doens't work. So I just upped the version number;)
+    - Finally get round to uploading to CPAN. Forgot to put README in MANIFEST so try and delete and upload again. Which doens't work. So I just upped the version number;)
 
 0.3   Mon Dec 18 09:50:26 2000
 	- Changed Name. More tests, fixes in session removal code. Also IPC::ShareLite doesn't seem to work under Perl 5.6 :(

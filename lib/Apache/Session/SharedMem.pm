@@ -1,6 +1,6 @@
 # Apache::Session::SharedMem 
 
-# Copyright 2000, 2001 Simon Wistow <simon@twoshortplanks.com>
+# Copyright 2000, 2001, 2002 Simon Wistow <simon@twoshortplanks.com>
 # This module is free software; you can redistribute it and/or
 # modify it under the same terms as Perl itself.
 
@@ -18,7 +18,7 @@ use Apache::Session::Generate::MD5;
 use Apache::Session::Serialize::Storable;
 
 @ISA = qw(Apache::Session);
-$VERSION = '0.4';
+$VERSION = '0.41';
 
 use Apache::Session;
 
@@ -113,7 +113,7 @@ Simon Wistow <simon@twoshortplanks.com>
 
 =head1 COPYRIGHT
 
-This software is copyright(c) 2000, 2001 Simon Wistow. It is free software
+This software is copyright(c) 2000, 2001, 2002 Simon Wistow. It is free software
 and can be used under the same terms as perl, i.e. either the GNU
 Public Licence or the Artistic License.
 

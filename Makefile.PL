@@ -13,6 +13,6 @@ use ExtUtils::MakeMaker;
 
 WriteMakefile(
     'NAME'	=> 'Apache::Session::SharedMem',
-    'VERSION_FROM' => 'Apache/Session/SharedMem.pm', # finds $VERSION
+    'VERSION_FROM' => 'lib/Apache/Session/SharedMem.pm', # finds $VERSION
     'PREREQ_PM'    => { 'Apache::Session' => 0, 'IPC::Cache' => 0},
 );

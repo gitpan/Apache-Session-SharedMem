@@ -2,6 +2,6 @@ Changes
 Makefile.PL
 MANIFEST
 README
-Apache/Session/SharedMem.pm
 test.pl
+lib/Apache/Session/SharedMem.pm
 lib/Apache/Session/Store/SharedMem.pm
