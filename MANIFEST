@@ -1,0 +1,6 @@
+Changes
+Makefile.PL
+MANIFEST
+Apache/Session/SharedMem.pm
+test.pl
+lib/Apache/Session/Store/SharedMem.pm
