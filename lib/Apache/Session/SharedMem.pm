@@ -18,7 +18,7 @@ use Apache::Session::Generate::MD5;
 use Apache::Session::Serialize::Storable;
 
 @ISA = qw(Apache::Session);
-$VERSION = '0.41';
+$VERSION = '0.5';
 
 use Apache::Session;
 

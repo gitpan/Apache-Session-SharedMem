@@ -46,7 +46,7 @@ sub materialize {
     my ($self, $session) = @_;
     
     $session->{serialized} = $self->{cache}->get($session->{data}->{_session_id});
-    die "Object does not exist in the data store" unless defined $session->{serialized};
+    return undef unless defined $session->{serialized};
 
 }    
 
